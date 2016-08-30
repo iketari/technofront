@@ -7,6 +7,9 @@
 		}
 
 		render (data) {
+			if (!data) {
+				return;
+			}
 			this.data = this._prepare(data);
 			this.el.innerHTML = Mustache.render(this.tmpl, this.data);
 		}
