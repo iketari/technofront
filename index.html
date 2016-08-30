@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Students monitoring</title>
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<!-- CSS Reset -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<!-- Milligram CSS minified -->
+		<link rel="stylesheet" href="assets/style/milligram.min.css">
+
+		<!-- You should properly set the path from the main file. -->
+        <link rel="stylesheet" href="assets/style/main.css">
+
+		<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
+    </head>
+    <body>
+
+		<table>
+		  <thead>
+		    <tr>
+		      <th>Name</th>
+		      <th>Age</th>
+		      <th>Height</th>
+		      <th>Location</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>Stephen Curry</td>
+		      <td>27</td>
+		      <td>1,91</td>
+		      <td>Akron, OH</td>
+		    </tr>
+		    <tr>
+		      <td>Klay Thompson</td>
+		      <td>25</td>
+		      <td>2,01</td>
+		      <td>Los Angeles, CA</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDDGWhW2CTwigQzNP1U0g4mo1YPieY7El0",
+		    authDomain: "technofront-f958d.firebaseapp.com",
+		    databaseURL: "https://technofront-f958d.firebaseio.com",
+		    storageBucket: "technofront-f958d.appspot.com",
+		  };
+		  firebase.initializeApp(config);
+
+		  var database = firebase.database();
+		</script>
+    </body>
+</html>
