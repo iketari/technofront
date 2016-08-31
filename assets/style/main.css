@@ -1,3 +1,13 @@
 body {
 	padding: 5vw;
 }
+
+tr {
+    transition: all 0.5s;
+    background-color: #fff;
+}
+
+tr.new {
+	background-color: #5b8cd4;
+    color: beige;
+}

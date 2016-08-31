@@ -26,7 +26,7 @@
 			firebase.initializeApp(config);
 
 			this.studentsRef = firebase.database().ref('students');
-			this.studentsRef.on('value', snapshot => {
+			this.studentsRef.orderByChild('time').on('value', snapshot => {
 				console.log(snapshot.val());
 				this.view.render(snapshot.val());
 			});
